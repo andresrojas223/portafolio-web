@@ -1,0 +1,178 @@
+
+.banner_content_father{
+
+width: 100%;
+background-color: #1D1D1D;
+height: 91vh;
+overflow: hidden;
+background-image: url('../../images/background.png');  
+background-position: center;
+
+}
+
+
+.banner_content_child{
+  margin:  0 auto;
+  display: flexbox;
+  width: $width-content;
+  height:  65vh; 
+
+}
+
+.banner_child_flex{
+
+ width: 88%;
+ margin-top: 7rem;
+ height: 20rem;
+
+}
+
+.banner_child_flex_tittle{
+  color: white;
+  width: 100%;
+  height: 10rem;
+
+}
+
+.banner_child_tittle{
+
+font-size: 4rem;
+font-family: $tittle;
+}
+
+.banner_child_flex_button{
+margin-top: 11rem;
+width: 100%;
+height: 3rem;
+
+}
+
+.banner_child_flex_button a {
+
+text-decoration: none;
+font-size: 19px;
+color: white;
+font-family: $tittle;
+padding: 14px;
+margin-right: 2rem; 
+border: 1px solid white;  
+
+}
+
+
+
+
+.banner_child_flex_button a:hover{
+
+  background-color: rgba(212, 205, 205, 0.384);
+
+
+}
+
+.banner_child_flex_button a:hover {
+
+  background-color: rgba(212, 205, 205, 0.384);
+
+}
+
+.icon_down{
+position: absolute;
+width: 100%;
+text-align: center;
+bottom: 10vh;
+margin: 0 auto;
+}
+
+.icon_down_font{
+  
+font-size: 1.8rem;
+color: white;
+cursor: pointer;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .banner_content_father{
+
+
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .banner_child_flex_tittle{
+          width: 100%;
+          height: 10rem;
+
+    }
+
+    .banner_child_tittle{
+
+        font-size: 40px;
+        font-family: $tittle;
+    }
+
+    .banner_child_flex_button{
+      margin-top: 5rem;
+      width: 100%;
+      height: 3rem;
+
+    }
+
+   
+  
+
+     .icon_down{
+ 
+       bottom: 11vh;
+       
+     }
+
+}
+@media (max-width: 368px){
+
+  .banner_child_tittle{
+   
+    font-size: 35px;
+
+  }
+
+  .banner_child_flex_button{
+
+    margin-top: 7rem;
+     
+  }
+
+  .banner_child_flex_button a{
+     
+     padding: 4px;
+     font-size: 14px;
+
+  }
+
+
+  
+
+   
+   .icon_down{
+ 
+    bottom: 7vh;
+    
+  }
+  
+}
+
+@media (max-width: 251px){
+
+
+  .banner_child_flex_button a{
+    display: block;
+
+
+
+  }
+
+}
