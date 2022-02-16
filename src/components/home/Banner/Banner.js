@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowCircleDown, } from '@fortawesome/free-solid-svg-icons'
-import MyImageSvg from '../../../images/wave.svg';
 import TypeWriter from 'typewriter-effect'
 import Link from 'react-scroll/modules/components/Link';
 

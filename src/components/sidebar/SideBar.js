@@ -2,17 +2,12 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
-import { useState,useRef, useEffect } from 'react/cjs/react.development';
+import { useState, useEffect } from 'react/cjs/react.development';
 import Link from 'react-scroll/modules/components/Link';
 
 
 export const SideBar = () => {
 const title = '{AR}'
-
-
-
-
-const ref = useRef();
 
 
 const [showMenu, setshowMenu] = useState(true);
@@ -58,7 +53,7 @@ return<div className={color ? 'content_father logo_scroll header_bg' || 'logo_sc
 
      
 
-<div ref={ref} className='menu_responsive'  >
+<div className='menu_responsive'  >
 
 <div className="btn_close">
 
