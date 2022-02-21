@@ -2,15 +2,16 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
-import { useState, useEffect } from 'react/cjs/react.development';
+import { useState} from 'react/cjs/react.development';
 import Link from 'react-scroll/modules/components/Link';
+import { FormattedMessage } from 'react-intl';
 
 
 export const SideBar = () => {
 const title = '{AR}'
 
 
-const [showMenu, setshowMenu] = useState(true);
+const [showMenu, setshowMenu] = useState(false);
 const [color, setcolor] = useState(false)
 const changeColor = () => {
 
@@ -47,7 +48,7 @@ const Close = () => {
 
 
 
-return<div className={color ? 'content_father logo_scroll header_bg' || 'logo_scroll'  : 'content_father   '}>
+return <div id='home' className={color ? 'content_father logo_scroll header_bg' || 'logo_scroll'  : 'content_father   '}>
 
    {showMenu && (
 
@@ -67,16 +68,16 @@ return<div className={color ? 'content_father logo_scroll header_bg' || 'logo_sc
 
 </div>
 
-<div className="content_child_nav_responsive">
+<div className='content_child_nav_responsive'>
 
 
   <ul className='menu' >
 
-  <li><Link  onClick={() => Close() }  to='/'  activeClass="active"  spy={true} smooth={true} offset={50} duration={500} >Home</Link></li>
-  <li><Link  onClick={() => Close() } to='acerca' activeClass="active"  spy={true} smooth={true} offset={50} duration={500} >About</Link></li>
-  <li><Link  onClick={() => Close() } to='habilidades' activeClass="active"  spy={true} smooth={true} offset={50} duration={500}>Skills</Link></li>
-  <li><Link  onClick={() => Close() } to='proyectos' activeClass="active"  spy={true} smooth={true} offset={50} duration={500}>My projects</Link></li>
-  <li  className='margin_top' ><a className='button_contac' href="#">Contac</a></li>
+  <li><Link  onClick={() => Close() }  to='/'  activeClass="active"  spy={true} smooth={true} offset={-70} duration={1200} ><FormattedMessage  id='app.home' defaultMessage="Home" /></Link></li>
+  <li><Link  onClick={() => Close() } to='acerca' activeClass="active"  spy={true} smooth={true} offset={-70} duration={1200} ><FormattedMessage  id='app.about' defaultMessage="About Me" /></Link></li>
+  <li><Link  onClick={() => Close() } to='habilidades' activeClass="active"  spy={true} smooth={true} offset={-70} duration={1200}><FormattedMessage  id='app.skills' defaultMessage="Skills" /></Link></li>
+  <li><Link  onClick={() => Close() } to='proyectos' activeClass="active"  spy={true} smooth={true} offset={-70} duration={1200}><FormattedMessage  id='app.projects' defaultMessage="Projects" /></Link></li>
+  <li className='button_contac' ><Link  onClick={() => Close() } to='contac' activeClass="active"  spy={true} smooth={true} offset={-70} duration={1200}><FormattedMessage  id='app.contac' defaultMessage="Contac" /></Link></li> 
   </ul>
 
 </div>
@@ -115,12 +116,11 @@ return<div className={color ? 'content_father logo_scroll header_bg' || 'logo_sc
 
     <ul  >
 
-     <li><a className='list_active' href="#">Home</a></li>
-     <li><Link to='acerca' activeClass="active"  spy={true} smooth={true} offset={50} duration={500} >About</Link></li>
-     <li><Link to='habilidades' activeClass="active"  spy={true} smooth={true} offset={50} duration={500}>Skills</Link></li>
-     <li><Link to='proyectos' activeClass="active"  spy={true} smooth={true} offset={50} duration={500}>My projects</Link></li>
-     <li className='margin_top'><a className='button_contac' href="#">Contac</a></li>
-
+    <li><Link to='/' activeClass="active"  spy={true} smooth={true} offset={50} duration={1200} ><FormattedMessage  id='app.home' defaultMessage="Home" /></Link></li>
+     <li><Link to='acerca' activeClass="active"  spy={true} smooth={true} offset={50} duration={1200} ><FormattedMessage  id='app.about' defaultMessage="About Me" /></Link></li>
+     <li><Link to='habilidades' activeClass="active"  spy={true} smooth={true} offset={50} duration={1200}><FormattedMessage  id='app.skills' defaultMessage="Skills" /></Link></li>
+     <li><Link to='proyectos' activeClass="active"  spy={true} smooth={true} offset={50} duration={1200}><FormattedMessage  id='app.projects' defaultMessage="Projects" /></Link></li>
+     <li className='button_contac' ><Link  onClick={() => Close() } to='contac' activeClass="active"  spy={true} smooth={true} offset={50} duration={1200}><FormattedMessage  id='app.contac' defaultMessage="Contac" /></Link></li>
 
     </ul>
 
@@ -129,4 +129,11 @@ return<div className={color ? 'content_father logo_scroll header_bg' || 'logo_sc
    </div>
 
   </div>;
-};
+
+  
+
+     
+
+
+}
+

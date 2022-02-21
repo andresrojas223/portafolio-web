@@ -1,0 +1,49 @@
+.footer_content{
+  display: grid;  
+  width: 100%;
+  padding-top: 3.7rem;
+  background-color: $color-background-body; 
+}
+
+.footer_icons{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 6vh 6vh 6vh;
+  justify-content: center;
+  padding-top: 1%;
+  text-align: center; 
+  width: $width-content;
+  font-size: 1.6rem;
+}
+
+.footer_icons a {
+
+  text-decoration: none;
+  color: white;
+  
+}
+
+.footer_icons a:hover{
+
+  color: rgba(23, 114, 250, 0.986);
+  font-size: 1.9rem;
+
+}
+
+.footer_text{
+
+  width: 100%;
+
+}
+
+.footer_text{
+  width: $width-content;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.8vh;
+  margin-top: 1%;
+  text-align: center;
+  
+}

@@ -1,0 +1,26 @@
+{
+
+    "app.home": "Inicio",
+    "app.about": "Sobre Mí",
+    "app.skills": "Habilidades",
+    "app.projects": "Proyectos",
+    "app.contac": "Contacto",
+    "app.tittle": "HEY!, SOY ANDRES ROJAS",
+    "app.Curriculum": "Ver Curriculum",
+    "app.aboutme": "SOBRE MÍ",
+    "app.textAbout": "¡Hola!, soy Andres Rojas, un Front-End Web Developer ubicado en Bogotá, Colombia.",
+    "app.textAbout1": "Me gusta llevar mi creatividad a las líneas de código, me apasiona combinar los mundos de la programación con el arte digital. ",  
+    "app.textAbout2": "Además de programar, aficionado de todo lo relacionado con la tecnología, música y de los deportes.",
+    "app.textAbout3": "Actualmente estudiando desarrollo de backend.",
+    "app.skills_len": "HABILIDADES",
+    "app.project_tittle": "PROYECTOS",
+    "app.project.heroes": "Una single page application utilizando React js donde podemos ver un listado de Superhéroes de Marvel y Dc comics, podemos ver la informacion de ellos y buscar uno en especifico mediante el apartado search.",
+    "app.project.paises": "Una aplicacion utilizando Angular donde podemos buscar paises por su nombre o por su capital, podemos tambien ver su respectiva informacion.",
+    "app.project.gifs": "una aplicación para buscar gifs mediante una Api, creada con Angular.",
+    "app.project.gitHub": "Ver más proyectos en GitHub",
+    "app.contac.title": "CONTÁCTAME",
+    "app.contac.text": "Estoy interesado en oportunidades nuevas, si tiene alguna pregunta o inquietud, No dude en utilizar el  formulario.",
+    "app.contac.text1": "Mi bandeja de entrada siempre estará disponible: ",
+    "app.contac.text2": "¡haré todo lo posible para responder!"   
+      
+  }

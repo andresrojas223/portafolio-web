@@ -1,7 +1,207 @@
-
 .contac_content_father{
     width: 100%;
-    background-color: $color-background-body
+    background-color: $color-background-body;
+    overflow: hidden;
 
 
 }
+
+
+.contac_content_child{ 
+  
+   
+   width: $width-content;
+   margin: 0 auto;
+   padding-bottom: 4%;
+
+}
+
+
+.contac_tittle{
+    display: flex;
+    font-size: 5vh;
+    font-family: $tittle;
+    height: 15%;
+
+}
+
+.contac_tittle h2{
+    margin-top: 5%;
+    margin-bottom: 4%;
+    color: white;
+    display: inline-block;
+    border-bottom: 4px solid white;
+ 
+ }
+
+
+.contac_text{
+ margin: 0 auto;
+ width: 60%;
+ padding-bottom: 2vh;
+
+
+}
+
+
+.contac_p{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.3vh;
+
+}
+
+.contac_form{
+  margin: 0 auto;  
+  width: 60%;
+  
+   
+
+}
+
+.conatc_form{
+   display: grid;
+   grid-template-columns: 30% 30%;
+   grid-template-rows: 20% 50% 100%;
+   justify-content: space-evenly;
+   height: 100%;
+   padding-top: 7%;
+   
+
+
+}
+
+.conatc_form input{
+ padding-left: 10%;  
+ height: 5vh;
+ margin-right: 2vh;
+ border: 1px solid rgba(128, 128, 128, 0.103);
+ background-color: #8d8d8d5d;
+ border-radius: 28px;
+ color: white;
+ font-size: 1.8vh;
+ font-family: 'Roboto', sans-serif;
+
+}
+
+.contac_message{
+   
+padding: 10px;
+height: 20vh;
+margin: 10% 0;
+width: 236%;
+border: none;
+border-radius: 10px;
+resize: none;
+background-color: #8d8d8d5d;
+font-size: 69%;
+font-family: 'Roboto', sans-serif;
+color: white;       
+}
+
+.content_submit{
+
+ text-align: center;
+ width: 100%;
+ 
+}
+
+
+
+.contac_submit{
+   border-radius: 20px;
+   height: 2.6rem;
+   border: none;
+   color: white;
+   background-color: #8d8d8d5d;
+   width: 95%;
+
+}
+
+
+.error{
+  position: absolute;
+  margin-top: 6vh;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 8%;
+  font-size: 1.5vh;
+  color: red;
+
+}
+
+.error_email{
+
+   position: absolute;
+   margin-top: 6vh;
+   font-family: 'Roboto', sans-serif;
+   margin-left: 33%;
+   color: red;
+   font-size: 1.5vh;
+
+}
+
+.true{
+
+   font-family: 'Roboto', sans-serif;
+   color: rgb(8, 255, 41);
+
+}
+
+.email{
+  font-weight: bolder;
+  color: white;
+
+}
+
+@media (max-width: 1026px){
+
+   .contac_p{
+
+      font-size: 2vh;
+    
+    }
+
+
+}
+
+@media (max-width: 775px){
+
+   .contac_p{
+
+      font-size: 2vh;
+    
+    }
+
+    .contac_text{
+      width: 86%;
+     
+     }
+
+     .contac_form{
+      margin: 2vh auto;  
+      width: 86%;
+     
+     }    
+
+
+     .contac_submit{
+      border-radius: 20px;
+      height: 2.3rem;
+      border: none;
+      color: white;
+      background-color: #8d8d8d5d;
+      width: 89%;
+   
+   }
+}
+
+@media (max-width: 475px){
+
+    
+   .contac_p{
+
+      font-size: 1.8vh;
+    
+    }
+
+ }

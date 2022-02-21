@@ -1,0 +1,27 @@
+{
+
+  "app.home": "Home",
+  "app.about": "About Me",
+  "app.skills": "Skills",
+  "app.projects": "My Projects",
+  "app.contac": "Contac",
+  "app.tittle": "HI, I'M ANDRES ROJAS,",
+  "app.Curriculum": "view Resume",
+  "app.aboutme": "ABOUT ME",
+  "app.textAbout": "Hi!, I'm Andres Rojas, a Front-End Web Developer located in Bogotá, Colombia.", 
+  "app.textAbout1": "I like to bring my creativity to the lines of code, I am passionate about combining the worlds of programming with digital art.",
+  "app.textAbout2": "In addition to programming, fond of everything related to technology, music and sports. ",
+  "app.textAbout3": "Currently studying backend development.",
+  "app.skills_len": "SKILLS",
+  "app.project_tittle": "PROJECTS",
+  "app.project.heroes": "A single page application using React js where we can see a list of Marvel and DC Comics Superheroes, we can see their information and search for a specific one through the search section.",    
+  "app.project.paises": "An application using Angular where we can search for countries by their name or by their capital, we can also see their respective information.",
+  "app.project.gifs": "An application to search for gifs through an Api, created with Angular.",
+  "app.project.gitHub": "See more projects on GitHub",
+  "app.contac.title": "CONTAC ME",
+  "app.contac.text": "I am interested in new opportunities, if you have any questions or concerns, feel free to use the form.",
+  "app.contac.text1": "My inbox will always be available: " ,
+  "app.contac.text2": "I will do my best to reply!"   
+ 
+ 
+}

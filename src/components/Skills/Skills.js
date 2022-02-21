@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaHtml5, FaCss3Alt, FaSass, FaJs, FaReact, FaAngular, FaTerminal, FaGithub, FaFigma } from "react-icons/fa";
 import { DiJqueryLogo, DiResponsive, DiPhotoshop } from "react-icons/di";
+import { FormattedMessage } from 'react-intl';
 
 
 export const Skills = () => {
@@ -10,7 +11,7 @@ export const Skills = () => {
         
       <div className="skills_tittle">
 
-      <h2>Habilidades</h2>
+      <h2><FormattedMessage  id='app.skills_len' defaultMessage="SKILLS" /></h2>
 
       </div>
  

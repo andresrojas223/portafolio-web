@@ -1,7 +1,5 @@
 import React from 'react';
-import { FaChevronUp } from "react-icons/fa";
-
-
+import { FormattedMessage } from 'react-intl';
 export const About = () => {
   return <div  id='acerca' className='about_content' >
 
@@ -9,7 +7,7 @@ export const About = () => {
 
     <div className="about_tittle">
 
-     <h2>ABOUT ME</h2>
+     <h2><FormattedMessage  id='app.aboutme' defaultMessage="ABOUT ME" /></h2>
 
     </div>
 
@@ -17,10 +15,11 @@ export const About = () => {
 
        <div className="about_text">
 
-        <p className='about_text_p'>¡Hola!, soy Andres Rojas, un Front-End Web Developer ubicado en Bogotá, Colombia. <br />
-         <br /> Me gusta llevar mi creatividad a las líneas de código, me apasiona combinar los mundos de la programación con el arte digital. <br />
-         <br /> Además de programar, aficionado de todo lo relacionado con la tecnología, música y de los deportes.<br />
-         <br /> Actualmente estudiando desarrollo de backend.  
+        <p className='about_text_p'> <FormattedMessage  id='app.textAbout' defaultMessage="Hi!, I'm Andres Rojas, a Front-End Web Developer located in Bogotá, Colombia." /> <br />
+         <br /><FormattedMessage  id='app.textAbout1' defaultMessage="I like to bring my creativity to the lines of code, I am passionate about combining the worlds of programming with digital art." /> <br />
+         <br /><FormattedMessage  id='app.textAbout2' defaultMessage="In addition to programming, fond of everything related to technology, music and sports." /> <br />
+         <br /><FormattedMessage  id='app.textAbout3' defaultMessage="Currently studying backend development." />   
+        
         </p>
 
        </div>
@@ -30,7 +29,6 @@ export const About = () => {
 
    </div>
 
-   <FaChevronUp className='swipe_up' />
   </div>;
 
 };
