@@ -13,7 +13,6 @@ background-position: center;
 
 .banner_content_child{
   margin:  0 auto;
-  display: flexbox;
   width: $width-content;
   height:  65vh; 
 
@@ -57,7 +56,7 @@ font-weight: bolder;
  
   color: white;
   background-color: transparent;
-  border: px solid white;
+
   border-radius: 10px;
 }
 

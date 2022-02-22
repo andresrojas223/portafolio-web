@@ -55,7 +55,7 @@ export const Contac = () => {
                        
                     let errores = {}
 
-                    //validacion nombre
+                    
 
                     if (!valores.nombre) {
                     
@@ -65,7 +65,7 @@ export const Contac = () => {
                       errores.nombre = 'El nombre solo puede contener letras y espacios.'
                     }
                     
-                      //validacion email
+                   
 
                     if (!valores.email) {
                     

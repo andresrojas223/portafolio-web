@@ -1,18 +1,35 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
-import { useState} from 'react/cjs/react.development';
 import Link from 'react-scroll/modules/components/Link';
 import { FormattedMessage } from 'react-intl';
+
+
 
 
 export const SideBar = () => {
 const title = '{AR}'
 
 
-const [showMenu, setshowMenu] = useState(false);
+
+
 const [color, setcolor] = useState(false)
+const [showMenu, setshowMenu] = useState(false);
+
+const Mostrar = () => {
+
+
+  setshowMenu(!showMenu)
+
+}
+
+
+const Close = () => {
+
+ setshowMenu(false)
+
+}
 const changeColor = () => {
 
   if(window.scrollY >= 100){
@@ -28,24 +45,8 @@ const changeColor = () => {
 
 
 
+
 window.addEventListener('scroll', changeColor)
-
-const Mostrar = () => {
-
-
-   setshowMenu(!showMenu)
-
-}
-
-
-const Close = () => {
-
-  setshowMenu(false)
-
-}
-
-
-
 
 
 return <div id='home' className={color ? 'content_father logo_scroll header_bg' || 'logo_scroll'  : 'content_father   '}>
@@ -88,8 +89,7 @@ return <div id='home' className={color ? 'content_father logo_scroll header_bg' 
 
    )}
   
-        
-
+ 
 
    <div className='content_child'>
 
